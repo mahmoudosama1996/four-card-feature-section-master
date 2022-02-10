@@ -89,22 +89,25 @@ img {
     width: 450px;
 }
 .header h1 {
-    margin: 5px ;
+    margin: 5px 0 ;
     font-weight: 600;
-    font-size: ;
+    font-size: 36px;
 }
 .header span {
     font-weight: 100;
+    font-size: 34px;
 }
 .header p {
     color: var(--Grayish-Blue);
-    font-weight: 200;
+    font-weight: 400;
+    margin: 10px 0;
 }
 /* -----xx-----header part------xx----- */
 /* --------------Cards-------------- */
 .card-container {
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
 }
 
 .flex-col {
@@ -116,20 +119,22 @@ img {
 
 .card {
     background-color: white;
-    width: 300px ;
-    height: 200px;
+    width: 350px ;
+    height: 250px;
     margin: 15px;
     border-radius: 10px;
     padding: 25px;
     color: var(--Grayish-Blue);
-    font-size: smaller;
+    font-weight: 200;
+    box-shadow:4px 4px 10px -5px var(--Grayish-Blue),0 10px 8px 5px var(--Verylight-gray) ;
+    
 }
 
 .card h3 {
     color: var(--Very-Dark-Blue);
-    font-weight: 400;
-    margin: 0;
-    font-size:large;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size:20px;
 }
 
 .cyan {
@@ -179,6 +184,9 @@ img {
 
     .header {
         width: 100%;
+    }
+    .header h1 , .header span {
+        font-size: 30px;
     }
 
 }
