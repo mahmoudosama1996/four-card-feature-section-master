@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@100;200;400;600&display=swap');
+/* ------------ Global ------------- */
+*  {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+body {
+    font-size: 15px;
+}
+a {
+    display: inline-block;
+    text-decoration:none;
+    color: #49439C;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+:root {
+     /* theme color */
+    --text-gray:#3f4954;
+    --text-light:#777C92;
+    --bg-color:#0f0f0f;
+    --midnight:#104f55;
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Verylight-gray: hsl(0, 0%, 95%);
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}   
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-gray {
+      color: var(--text-gray);
+  }
+
+  .text-light {
+    color: var(--text-light);
+    font-weight: 100;
+
+  }
+
+
+/* -----x------ Global ------x------ */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Very-Dark-Blue);
+    background-color: var(--Very-Light-Gray);
+    height: ;
+    font-family: 'outfit';
+    padding: 75PX;
+}
+
+/* ------------header part------------- */
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 450px;
+}
+.header h1 {
+    margin: 5px ;
+    font-weight: 600;
+    font-size: ;
+}
+.header span {
+    font-weight: 100;
+}
+.header p {
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+/* -----xx-----header part------xx----- */
+/* --------------Cards-------------- */
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card {
+    background-color: white;
+    width: 300px ;
+    height: 200px;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 25px;
+    color: var(--Grayish-Blue);
+    font-size: smaller;
+}
+
+.card h3 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 400;
+    margin: 0;
+    font-size:large;
+}
+
+.cyan {
+    border-top: 4px solid var(--Cyan);
+    background-image: url(./images/icon-supervisor.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.red {
+    border-top: 4px solid var(--Red);
+    background-image: url(./images/icon-team-builder.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.orange {
+    border-top: 4px solid var(--Orange);
+    background-image: url(./images/icon-karma.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.blue {
+    border-top: 4px solid var(--Blue);
+    background-image: url(./images/icon-calculator.svg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+/* -----xx-------Cards-----xx------- */
+
+/* --------------media queries-------------- */
+
+@media screen  and (max-width:375px) {
+    
+    .container {
+        padding: 50px 10px;
+    }
+
+    .card {
+        margin:15px 0;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+}
+/* ------xx------media queries-----xx------- */
+
